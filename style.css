@@ -90,6 +90,10 @@
    color: #fff;
    padding-left: 5%;
    font-family: 'EB Garamond', serif;
+   transition: all 1s;
+}
+.cabecera__menu__lista li a:hover {
+   font-size: 23px;
 }
 .cabecera__barra__lista__img {
    display: inline ;
