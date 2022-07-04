@@ -1,64 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Servicios - 3DMAGI</title>
-</head>
-<body>
-    <!-- Inicio de Header -->
-    <header class="cabecera">
-        <!-- Logo -->
-        <div class="logo">
-            <img src="multimedia/Logo 3DMAGI.jpg" alt="Logo 3DMAGI">
-        </div>  
-        <div class="menu">  
-        <!-- Header Superior / Barra -->
-            <div class="cabecera__barra">
-                <div class="cabecera__barra__lista__img">
-                    <img src="multimedia/Logo WhatsAppmenu.png" alt="Logo WhatsApp" class="cabecera__barra__whatsapp">
-                        <a href="https://wa.me/3413954295" target="_blank">3413954295</a>
-                </div>    
-                <div class="cabecera__barra__lista__img">
-                    <img src="multimedia/Logo Gmailmenu.png" alt="Logo Gmail"class="cabecera__barra__gmail">
-                        <a href="https://mailto:impresiones3dmagi@gmail.com" target="_blank">impresiones3dmagi@gmail.com</a>
-                </div>
-                <div class="cabecera__barra__lista__img">
-                    <img src="multimedia/Logo Ubicacionmenu.png" alt="Logo Ubicacion"class="cabecera__barra__ubicacion">
-                        <a href="https://goo.gl/maps/PVb3gCSUmgZLKUWH7" target="_blank">Rosario,Santa Fe</a>
-                </div>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Inicio de Header-->
+    <header>
+        <!-- Inicio Logotipo y Nombre -->
+        <section>
+        <nav class="navbar ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/multimedia/Logo Simbolo 3D MAGI.jpg" alt="Simbolo Empresarial" width="30" height="24" class="d-inline-block align-text-top">
+                3D MAGI
+              </a>
             </div>
-        <!-- Fin Header Superior / Barra -->  
-        <!-- Aqui iria una barra de busqueda con boton -->
-        <!-- Inicio barra principal -->
-            <div class="cabecera__menu">
-                <nav>
-                    <ul class="cabecera__menu__lista">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="servicios.html">SERVICIOS</a></li>
-                        <li><a href="materiales.html">MATERIALES</a></li>
-                        <li><a href="productos.html">PRODUCTOS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-            </div> 
-        <!-- Fin barra principal -->
-        </div>
+        </nav>
+        </section>
+        <!-- Fin Logotipo y Nombre -->
+        <!-- Incio Navbar con barra de busqueda -->
+        <section>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/servicios.html">Servicios</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/materiales.html">Materiales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-flex" role="search">
+                <input clsas="form-control me-2" type="search" placeholder="Busqueda.." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+        </nav>
+        </section>
+    <!-- Fin Navbar con barra de busqueda -->
     </header>
-    <!-- Fin de Header -->
-
-    <!-- Incio imagen de titulo/ Con Leyenda en imagen -->     
-    <section class="banner">
-        <img src="multimedia/Botes 3d mod.jpg" alt="Botes impresos en 3D" class="cuerpo__img">
-        <div>
-            <h1>IMPRESIONES 3D</h1>
-            <h2>Soluciones para todos tus caprichos</h2>
-        </div> 
-    </section>
-    <!-- Fin imagen de titulo/ Con Leyenda en imagen -->
-    <!-- Inicio contenido Servicios-->     
+    <!-- Fin de Header-->
+    <!-- Inicio contenido Servicios-->  
+    <!-- Incio de Banner -->
+    <section>
+        <div class="card bg-dark text-primary">
+          <img src="/multimedia/Banner/Impresion 3d1.jpg" class="card-img" alt="Logotipo 3D">
+          <div class="card-img-overlay letra d-flex align-items-start flex-column-reverse">
+            <h5 class="card-title letra">Soluciones para todos tus caprichos</h5>
+            <h1 class="card-text letra">IMPRESIONES 3D</h1>
+          </div>
+        </div>
+    </section>  
+    <!-- Fin de Banner-->  
     <section class="informacion">
         <div class="informacion__titulo">
             <h1>¿Qué hacemos?</h1>
@@ -76,9 +87,13 @@
         </div>
     </section>        
     <!-- Fin contenido Servicios--> 
-
+    <!-- Boton whatsApp-->
+    <a href="https://wa.me/+543413954295" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"><img src="/multimedia/Logo WhatsAppmenusdad.png" alt="Logo WhatsApp"></i></a>
+    <!-- Boton whatsApp-->
     <!-- Inicio de Footer -->
-    <footer class="pie">
+    <footer>
+        <div class="pie">
         <div class="pie__seguinos">
             <h2>Seguinos</h2>
             <nav>
@@ -91,19 +106,23 @@
         </div>
         <div class="pie__datos">
             <h2>Donde encontrarnos</h2>
-            <div class="pie__datos__gral">
+            <nav>
+                <ul>
                     <div class="pie__datos__img">
-                        <img src="multimedia/Logo WhatsAppmenu.png" alt="Logo WhatsApp"><a href="https://wa.me/3413954295" target="_blank">3413954295</a>
+                        <img src="multimedia/Logo WhatsAppmenu.png" alt="Logo WhatsApp"><li><a href="https://wa.me/3413954295" target="_blank">3413954295</a></li>
                     </div>
                     <div class="pie__datos__img">
-                        <img src="multimedia/Logo Gmailmenu.png" alt="Logo Gmail"><a href="https://mailto:impresiones3dmagi@gmail.com" target="_blank">impresiones3dmagi@gmail.com</a>
+                        <img src="multimedia/Logo Gmailmenu.png" alt="Logo Gmail"><li><a href="https://mailto:impresiones3dmagi@gmail.com" target="_blank">impresiones3dmagi@gmail.com</a></li>
                     </div>
                     <div class="pie__datos__img">
-                        <img src="multimedia/Logo Ubicacionmenu.png" alt="Logo Ubicacion"><a href="https://goo.gl/maps/PVb3gCSUmgZLKUWH7" target="_blank">Rosario,Santa Fe</a>
-                    </div>
-            </div>        
+                        <img src="multimedia/Logo Ubicacionmenu.png" alt="Logo Ubicacion"><li><a href="https://goo.gl/maps/PVb3gCSUmgZLKUWH7" target="_blank">Rosario,Santa Fe</a></li>
+                    </div>        
+                </ul>
+            </nav>
         </div>
+      </div>
     </footer>
     <!-- Fin de Footer -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
