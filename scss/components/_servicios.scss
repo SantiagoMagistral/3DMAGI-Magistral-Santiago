@@ -1,0 +1,50 @@
+.informacion{
+    background-color: #2B4078;
+    border: black 0.2px solid;
+ }
+ .informacion__titulo{
+    padding: 45px 60px 20px 175px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-size: x-large;
+ }
+ .informacion__detalles{
+    display: flex;
+    align-items: center;
+    width: 97%;
+    margin-left: 1.5%;
+ }
+ .informacion__servicios{
+    display: flex;
+    flex-direction: column;
+ }
+ .informacion__servicios p{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-size: large;
+    width: 50%;
+    margin-left: 23%;
+ }
+ .informacion__servicios ul{
+    width: 50%;
+    margin-left: 28%;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-size: large;
+    margin-bottom: 3%;
+ }
+ @media (max-width: 650px) {
+   .informacion__titulo{
+      padding: 20px;}
+   .informacion__servicios{
+      width: 100%;
+   }
+   .informacion__otros{
+      padding: 20px; 
+   }
+}
+ 
