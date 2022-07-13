@@ -1,28 +1,23 @@
-  .pie{
+.pie{
     background-color: #1E1D45;
     width: 100%;
-    display: flex;
+    display: map-get($map: $flexbox, $key: disp-flex );
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
  }
  .pie__seguinos{
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    @extend %flexcolumn;
     align-content: space-between;
-    align-items: center;
+    justify-content: space-around;
  }
  .pie__seguinos h2{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
- }
+   @extend %tipoletra;
+}
  .pie__mapa{
-    display: flex;
+    display: map-get($map: $flexbox, $key: disp-flex );
     align-items: center;
     padding: 10px;
  }
@@ -31,32 +26,23 @@
     width: 40vw;
  }
  .pie__datos{
-    display: flex;
-    flex-direction: column;
+   @extend %flexcolumn;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
  }
  .pie__datos h2{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+   @extend %tipoletra;
  }
- .pie__datos nav ul{
+ .pie__datos{
     list-style: none;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
     align-content: space-around;
  }
- .pie__datos nav ul a{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+ .pie__datos a{
+   @extend %tipoletra;
  }
  .pie__datos__img{
-    display: flex;
+    display: map-get($map: $flexbox, $key: disp-flex );
     align-items: center;
  }
  .pie__seguinos img:hover {

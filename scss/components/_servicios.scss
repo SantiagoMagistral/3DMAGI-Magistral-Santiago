@@ -1,30 +1,23 @@
 .informacion{
-    background-color: #2B4078;
+    background-color: map-get($map: $fondo, $key:bg-fondo );
     border: black 0.2px solid;
  }
  .informacion__titulo{
     padding: 45px 60px 20px 175px;
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+    @extend %tipoletra;
     font-size: x-large;
  }
  .informacion__detalles{
-    display: flex;
+   display: map-get($map: $flexbox, $key: disp-flex );
     align-items: center;
     width: 97%;
     margin-left: 1.5%;
  }
  .informacion__servicios{
-    display: flex;
-    flex-direction: column;
+   @extend %flexcolumn;
  }
  .informacion__servicios p{
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+   @extend %tipoletra;
     font-size: large;
     width: 50%;
     margin-left: 23%;

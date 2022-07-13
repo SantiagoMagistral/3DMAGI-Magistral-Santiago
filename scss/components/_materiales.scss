@@ -4,9 +4,6 @@
  }
  .informacion__otros{
     padding: 45px 60px 20px 175px;
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+    @extend %tipoletra;
     font-size: x-large;
  }

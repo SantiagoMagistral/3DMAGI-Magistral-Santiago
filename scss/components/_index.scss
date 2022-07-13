@@ -2,11 +2,10 @@
     font-family: 'EB Garamond', serif;
  }
  .productos__destacados{
-    background-color: #2B4078;
+    background-color: map-get($map: $fondo, $key:bg-fondo );
     padding-bottom: 25px;
  }
  .productos__destacados H2{
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+   @extend %tipoletra;
     padding: 20px 0px 30px 40px;
  }

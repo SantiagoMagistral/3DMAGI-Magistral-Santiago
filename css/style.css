@@ -1,4 +1,16 @@
 /*Variables*/
+.informacion__servicios, .pie__datos, .pie__seguinos {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__titulo, .productos__destacados H2, .informacion__otros, .informacion__servicios p, .informacion__titulo, .pie__datos a, .pie__datos h2, .pie__seguinos h2, .productos__titulo {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "EB Garamond", serif;
+}
+
 header section nav {
   background-color: #1E1D45;
 }
@@ -16,15 +28,15 @@ header section nav {
 
 .productos__titulo {
   padding: 20px;
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
   font-size: x-large;
 }
 
 .tarjetas {
   padding: 10px;
+}
+
+.card1:hover {
+  transform: scale(1.1);
 }
 
 .pie {
@@ -38,19 +50,9 @@ header section nav {
 }
 
 .pie__seguinos {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   align-content: space-between;
-  align-items: center;
-}
-
-.pie__seguinos h2 {
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
+  justify-content: space-around;
 }
 
 .pie__mapa {
@@ -65,32 +67,14 @@ header section nav {
 }
 
 .pie__datos {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.pie__datos h2 {
+.pie__datos {
   list-style: none;
   text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
-}
-
-.pie__datos nav ul {
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
   align-content: space-around;
-}
-
-.pie__datos nav ul a {
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
 }
 
 .pie__datos__img {
@@ -153,10 +137,6 @@ header section nav {
 
 .informacion__titulo {
   padding: 45px 60px 20px 175px;
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
   font-size: x-large;
 }
 
@@ -167,16 +147,7 @@ header section nav {
   margin-left: 1.5%;
 }
 
-.informacion__servicios {
-  display: flex;
-  flex-direction: column;
-}
-
 .informacion__servicios p {
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
   font-size: large;
   width: 50%;
   margin-left: 23%;
@@ -209,10 +180,6 @@ header section nav {
 
 .informacion__otros {
   padding: 45px 60px 20px 175px;
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
   font-size: x-large;
 }
 
@@ -226,8 +193,6 @@ header section nav {
 }
 
 .productos__destacados H2 {
-  color: #fff;
-  font-family: "EB Garamond", serif;
   padding: 20px 0px 30px 40px;
 }
 
@@ -237,10 +202,6 @@ header section nav {
 
 .info__titulo {
   padding: 20px;
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-  font-family: "EB Garamond", serif;
   font-size: x-large;
 }
 
@@ -251,7 +212,5 @@ header section nav {
 .contacto {
   color: #fff;
 }
-
-/*@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');*/
 
 /*# sourceMappingURL=style.css.map */
