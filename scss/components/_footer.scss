@@ -12,6 +12,10 @@
     @extend %flexcolumn;
     align-content: space-between;
     justify-content: space-around;
+    list-style: none;
+ }
+ .pie__seguinos ul{
+   list-style: none;
  }
  .pie__seguinos h2{
    @extend %tipoletra;
@@ -22,7 +26,7 @@
     padding: 10px;
  }
  .pie__mapa iframe{
-    height: 40vh;
+    height: 30vh;
     width: 40vw;
  }
  .pie__datos{
